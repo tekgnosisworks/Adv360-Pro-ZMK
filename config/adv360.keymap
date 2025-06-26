@@ -162,11 +162,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&dollar_tilde  &plus_one  &lbracket_two  &lbrace_three  &lpara_four  &amp_five  &tog 1                                                   &mo 3      &equal_six  &rpara_seven  &rbrace_eight  &rbracket_9  &astrix_zero  &pipe_grave
-&kp TAB        &kp SEMI   &kp COMMA      &kp PERIOD     &kp P        &kp Y      &none                                                    &none      &kp F       &kp G         &kp C          &kp R        &kp L         &kp SLASH
-&kp ESC        &kp A      &kp O          &kp E          &kp U        &kp I      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H         &kp T          &kp N        &kp S         &kp MINUS
-&kp LSHFT      &kp APOS   &kp Q          &kp J          &kp K        &kp X                           &kp HOME      &kp PG_UP                        &kp B       &kp M         &kp W          &kp V        &kp Z         &kp RSHFT
-&mo 2          &kp APOS   &kp CAPS       &kp LEFT       &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP        &kp DOWN       &at_carat    &bslash_bang  &mo 2
+&pipe_grave  &plus_one      &lbracket_two  &lbrace_three  &lpara_four  &amp_five  &tog 1                                                   &mo 3      &equal_six  &rpara_seven  &rbrace_eight  &rbracket_9  &astrix_zero  &exclamation_perc
+&kp TAB      &kp SEMI       &kp COMMA      &kp PERIOD     &kp P        &kp Y      &none                                                    &none      &kp F       &kp G         &kp C          &kp R        &kp L         &bslash_bang
+&kp ESC      &kp A          &kp O          &kp E          &kp U        &kp I      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H         &kp T          &kp N        &kp S         &kp MINUS
+&kp LSHFT    &kp APOS       &kp Q          &kp J          &kp K        &kp X                           &kp HOME      &kp PG_UP                        &kp B       &kp M         &kp W          &kp V        &kp Z         &kp RSHFT
+&mo 2        &dollar_tilde  &kp CAPS       &kp LEFT       &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP        &kp DOWN       &kp SLASH    &at_carat     &mo 2
             >;
         };
 
