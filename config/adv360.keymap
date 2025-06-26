@@ -38,10 +38,100 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bracket_two: bracket_two {
+        lbracket_two: lbracket_two {
             compatible = "zmk,behavior-mod-morph";
-            label = "BRACKET_TWO";
+            label = "LBRACKET_TWO";
             bindings = <&kp LEFT_BRACKET>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lbrace_three: lbrace_three {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRACE_THREE";
+            bindings = <&kp LEFT_BRACE>, <&kp KP_NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lpara_four: lpara_four {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPARA_FOUR";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        amp_five: amp_five {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMP_FIVE";
+            bindings = <&kp AMPERSAND>, <&kp KP_NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equal_six: equal_six {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_SIX";
+            bindings = <&kp EQUAL>, <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rpara_seven: rpara_seven {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPARA_SEVEN";
+            bindings = <&kp KP_RIGHT_PARENTHESIS>, <&kp KP_NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rbrace_eight: rbrace_eight {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRACE_EIGHT";
+            bindings = <&kp RIGHT_BRACE>, <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rbracket_9: rbracket_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRACKET_9";
+            bindings = <&kp RIGHT_BRACKET>, <&kp KP_NUMBER_9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        astrix_zero: astrix_zero {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ASTRIX_ZERO";
+            bindings = <&kp ASTERISK>, <&kp KP_NUMBER_0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        exclamation_perc: exclamation_perc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCLAMATION_PERC";
+            bindings = <&kp EXCLAMATION>, <&kp PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pipe_grave: pipe_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PIPE_GRAVE";
+            bindings = <&kp PIPE>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -54,11 +144,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&dollar_tilde  &plus_one  &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB        &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC        &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2          &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&dollar_tilde  &plus_one  &lbracket_two  &lbrace_three  &lpara_four  &amp_five  &tog 1                                                   &mo 3      &equal_six  &rpara_seven  &rbrace_eight  &rbracket_9  &astrix_zero  &pipe_grave
+&kp TAB        &kp Q      &kp W          &kp E          &kp R        &kp T      &none                                                    &none      &kp Y       &kp U         &kp I          &kp O        &kp P         &kp BSLH
+&kp ESC        &kp A      &kp S          &kp D          &kp F        &kp G      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H       &kp J         &kp K          &kp L        &kp SEMI      &kp SQT
+&kp LSHFT      &kp Z      &kp X          &kp C          &kp V        &kp B                           &kp HOME      &kp PG_UP                        &kp N       &kp M         &kp COMMA      &kp DOT      &kp FSLH      &kp RSHFT
+&mo 2          &kp GRAVE  &kp CAPS       &kp LEFT       &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP        &kp DOWN       &kp LBKT     &kp RBKT      &mo 2
             >;
         };
 
