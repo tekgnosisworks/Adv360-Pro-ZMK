@@ -86,7 +86,7 @@
         rpara_seven: rpara_seven {
             compatible = "zmk,behavior-mod-morph";
             label = "RPARA_SEVEN";
-            bindings = <&kp KP_RIGHT_PARENTHESIS>, <&kp KP_NUMBER_7>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp LS(KP_NUMBER_7)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
