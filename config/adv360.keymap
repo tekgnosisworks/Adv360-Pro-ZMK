@@ -20,37 +20,37 @@
             bindings = <&kp>, <&kp>;
         };
 
-        tilde_dollar: tilde_dollar {
+        dollar_tilde: dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
-            label = "TILDE_DOLLAR";
-            bindings = <&kp TILDE>, <&kp DLLR>;
+            label = "DOLLAR_TILDE";
+            bindings = <&kp DLLR>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        one_lpar: one_lpar {
+        lpar_one: lpar_one {
             compatible = "zmk,behavior-mod-morph";
-            label = "ONE_LPAR";
-            bindings = <&kp KP_N1>, <&kp LPAR>;
+            label = "LPAR_ONE";
+            bindings = <&kp LPAR>, <&kp KP_N1>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        two_rpar: two_rpar {
+        rpar_two: rpar_two {
             compatible = "zmk,behavior-mod-morph";
-            label = "TWO_RPAR";
-            bindings = <&kp KP_N2>, <&kp RPAR>;
+            label = "RPAR_TWO";
+            bindings = <&kp RPAR>, <&kp KP_N2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        three_rbrac: three_rbrac {
+        rbac_three: rbac_three {
             compatible = "zmk,behavior-mod-morph";
-            label = "THREE_RBRAC";
-            bindings = <&kp KP_N3>, <&kp RBRC>;
+            label = "RBAC_THREE";
+            bindings = <&kp RBRC>, <&kp KP_N3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -67,82 +67,73 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        five_lbrac: five_lbrac {
+        lbrac_five: lbrac_five {
             compatible = "zmk,behavior-mod-morph";
-            label = "FIVE_LBRAC";
-            bindings = <&kp KP_N5>, <&kp LBRC>;
+            label = "LBRAC_FIVE";
+            bindings = <&kp LBRC>, <&kp KP_N5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        six_rbrk: six_rbrk {
+        rbrk_six: rbrk_six {
             compatible = "zmk,behavior-mod-morph";
-            label = "SIX_RBRK";
-            bindings = <&kp KP_N6>, <&kp RBKT>;
+            label = "RBRK_SIX";
+            bindings = <&kp RBKT>, <&kp KP_N6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        seven_lbrk: seven_lbrk {
+        lbrk_seven: lbrk_seven {
             compatible = "zmk,behavior-mod-morph";
-            label = "SEVEN_LBRK";
-            bindings = <&kp KP_N7>, <&kp LBKT>;
+            label = "LBRK_SEVEN";
+            bindings = <&kp LBKT>, <&kp KP_N7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        eight_excl: eight_excl {
+        excl_eight: excl_eight {
             compatible = "zmk,behavior-mod-morph";
-            label = "EIGHT_EXCL";
-            bindings = <&kp KP_N8>, <&kp EXCL>;
+            label = "EXCL_EIGHT";
+            bindings = <&kp EXCL>, <&kp KP_N8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        nine_equal: nine_equal {
+        equal_nine: equal_nine {
             compatible = "zmk,behavior-mod-morph";
-            label = "NINE_EQUAL";
-            bindings = <&kp KP_N9>, <&kp EQUAL>;
+            label = "EQUAL_NINE";
+            bindings = <&kp KP_EQUAL>, <&kp KP_N9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        zero_star: zero_star {
+        star_zero: star_zero {
             compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_STAR";
-            bindings = <&kp KP_N0>, <&kp ASTRK>;
+            label = "STAR_ZERO";
+            bindings = <&kp STAR>, <&kp KP_N0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        perc_amp: perc_amp {
+        amp_perc: amp_perc {
             compatible = "zmk,behavior-mod-morph";
-            label = "PERC_AMP";
-            bindings = <&kp PRCNT>, <&kp AMPS>;
+            label = "AMP_PERC";
+            bindings = <&kp AMPS>, <&kp PERCENT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        grave_hash: grave_hash {
+        hash_grave: hash_grave {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_HASH";
-            bindings = <&kp GRAVE>, <&kp POUND>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        pipe_bslash: pipe_bslash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PIPE_BSLASH";
-            bindings = <&kp PIPE>, <&kp BACKSLASH>;
+            label = "HASH_GRAVE";
+            bindings = <&kp HASH>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -157,10 +148,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        four_plus: four_plus {
+        plus_four: plus_four {
             compatible = "zmk,behavior-mod-morph";
-            label = "FOUR_PLUS";
-            bindings = <&kp KP_N4>, <&kp PLUS>;
+            label = "PLUS_FOUR";
+            bindings = <&kp PLUS>, <&kp KP_N4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        fslash_pipe: fslash_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FSLASH_PIPE";
+            bindings = <&kp FSLH>, <&kp PIPE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -173,11 +173,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&perc_amp  &seven_lbrk    &five_lbrac  &three_rbrac  &one_lpar  &nine_equal  &tog 1                                                   &mo 3      &zero_star  &two_rpar  &four_plus  &six_rbrk  &eight_excl  &grave_hash
-&kp TAB    &kp SEMI       &kp COMMA    &kp PERIOD    &kp P      &kp Y        &none                                                    &none      &kp F       &kp G      &kp C       &kp R      &kp L        &pipe_bslash
-&kp ESC    &kp A          &kp O        &kp E         &kp U      &kp I        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H      &kp T       &kp N      &kp S        &kp MINUS
-&kp LSHFT  &kp APOS       &kp Q        &kp J         &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B       &kp M      &kp W       &kp V      &kp Z        &kp RSHFT
-&mo 2      &tilde_dollar  &kp CAPS     &kp LEFT      &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP     &kp DOWN    &kp SLASH  &caret_at    &mo 2
+&amp_perc  &lbrk_seven    &lbrac_five  &rbac_three  &lpar_one  &equal_nine  &tog 1                                                   &mo 3      &star_zero  &rpar_two  &plus_four  &rbrk_six  &excl_eight   &hash_grave
+&kp TAB    &kp SEMI       &kp COMMA    &kp PERIOD   &kp P      &kp Y        &none                                                    &none      &kp F       &kp G      &kp C       &kp R      &kp L         &kp SLASH
+&kp ESC    &kp A          &kp O        &kp E        &kp U      &kp I        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H      &kp T       &kp N      &kp S         &kp MINUS
+&kp LSHFT  &kp APOS       &kp Q        &kp J        &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B       &kp M      &kp W       &kp V      &kp Z         &kp RSHFT
+&mo 2      &dollar_tilde  &kp CAPS     &kp LEFT     &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP     &kp DOWN    &caret_at  &fslash_pipe  &mo 2
             >;
         };
 
