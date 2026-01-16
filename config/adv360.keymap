@@ -23,133 +23,135 @@
         dollar_tilde: dollar_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "DOLLAR_TILDE";
-            bindings = <&kp DOLLAR>, <&kp TILDE>;
+            bindings = <&kp TILDE>, <&kp DLLR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        plus_one: plus_one {
+        one_lpar: one_lpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "PLUS_ONE";
-            bindings = <&kp PLUS>, <&kp KP_N1>;
+            label = "ONE_LPAR";
+            bindings = <&kp KP_N1>, <&kp LPAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        lbracket_two: lbracket_two {
+        two_rpar: two_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "LBRACKET_TWO";
-            bindings = <&kp LEFT_BRACKET>, <&kp KP_NUMBER_2>;
+            label = "TWO_RPAR";
+            bindings = <&kp KP_N2>, <&kp RPAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        lbrace_three: lbrace_three {
+        three_rbrac: three_rbrac {
             compatible = "zmk,behavior-mod-morph";
-            label = "LBRACE_THREE";
-            bindings = <&kp LEFT_BRACE>, <&kp KP_NUMBER_3>;
+            label = "THREE_RBRAC";
+            bindings = <&kp KP_N3>, <&kp RBRC>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        lpara_four: lpara_four {
+        four-plus:
+
+        four-plus {
             compatible = "zmk,behavior-mod-morph";
-            label = "LPARA_FOUR";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_NUMBER_4>;
+            label = "FOUR-PLUS";
+            bindings = <&kp KP_N4>, <&kp PLUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        amp_five: amp_five {
+        five_lbrac: five_lbrac {
             compatible = "zmk,behavior-mod-morph";
-            label = "AMP_FIVE";
-            bindings = <&kp AMPERSAND>, <&kp KP_NUMBER_5>;
+            label = "FIVE_LBRAC";
+            bindings = <&kp KP_N5>, <&kp LBRC>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        equal_six: equal_six {
+        six_rbrk: six_rbrk {
             compatible = "zmk,behavior-mod-morph";
-            label = "EQUAL_SIX";
-            bindings = <&kp EQUAL>, <&kp KP_NUMBER_6>;
+            label = "SIX_RBRK";
+            bindings = <&kp KP_N6>, <&kp RBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rpara_seven: rpara_seven {
+        seven_lbrk: seven_lbrk {
             compatible = "zmk,behavior-mod-morph";
-            label = "RPARA_SEVEN";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_N7>;
+            label = "SEVEN_LBRK";
+            bindings = <&kp KP_N7>, <&kp LBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rbrace_eight: rbrace_eight {
+        eight_excl: eight_excl {
             compatible = "zmk,behavior-mod-morph";
-            label = "RBRACE_EIGHT";
-            bindings = <&kp RIGHT_BRACE>, <&kp KP_NUMBER_8>;
+            label = "EIGHT_EXCL";
+            bindings = <&kp KP_N8>, <&kp EXCL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rbracket_9: rbracket_9 {
+        nine_equal: nine_equal {
             compatible = "zmk,behavior-mod-morph";
-            label = "RBRACKET_9";
-            bindings = <&kp RIGHT_BRACKET>, <&kp KP_NUMBER_9>;
+            label = "NINE_EQUAL";
+            bindings = <&kp KP_N9>, <&kp EQUAL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        astrix_zero: astrix_zero {
+        zero_star: zero_star {
             compatible = "zmk,behavior-mod-morph";
-            label = "ASTRIX_ZERO";
-            bindings = <&kp ASTERISK>, <&kp KP_NUMBER_0>;
+            label = "ZERO_STAR";
+            bindings = <&kp KP_N0>, <&kp ASTRK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        exclamation_perc: exclamation_perc {
+        perc_amp: perc_amp {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCLAMATION_PERC";
-            bindings = <&kp EXCLAMATION>, <&kp PERCENT>;
+            label = "PERC_AMP";
+            bindings = <&kp PRCNT>, <&kp AMPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        pipe_grave: pipe_grave {
+        grave_hash: grave_hash {
             compatible = "zmk,behavior-mod-morph";
-            label = "PIPE_GRAVE";
-            bindings = <&kp PIPE>, <&kp GRAVE>;
+            label = "GRAVE_HASH";
+            bindings = <&kp GRAVE>, <&kp POUND>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bslash_bang: bslash_bang {
+        pipe_bslash: pipe_bslash {
             compatible = "zmk,behavior-mod-morph";
-            label = "BSLASH_BANG";
-            bindings = <&kp BACKSLASH>, <&kp HASH>;
+            label = "PIPE_BSLASH";
+            bindings = <&kp PIPE>, <&kp BACKSLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        at_carat: at_carat {
+        caret_at: caret_at {
             compatible = "zmk,behavior-mod-morph";
-            label = "AT_CARAT";
-            bindings = <&kp AT>, <&kp CARET>;
+            label = "CARET_AT";
+            bindings = <&kp CARET>, <&kp AT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -162,11 +164,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&pipe_grave  &plus_one      &lbracket_two  &lbrace_three  &lpara_four  &amp_five  &tog 1                                                   &mo 3      &equal_six  &rpara_seven  &rbrace_eight  &rbracket_9  &astrix_zero  &exclamation_perc
-&kp TAB      &kp SEMI       &kp COMMA      &kp PERIOD     &kp P        &kp Y      &none                                                    &none      &kp F       &kp G         &kp C          &kp R        &kp L         &bslash_bang
-&kp ESC      &kp A          &kp O          &kp E          &kp U        &kp I      &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H         &kp T          &kp N        &kp S         &kp MINUS
-&kp LSHFT    &kp APOS       &kp Q          &kp J          &kp K        &kp X                           &kp HOME      &kp PG_UP                        &kp B       &kp M         &kp W          &kp V        &kp Z         &kp RSHFT
-&mo 2        &dollar_tilde  &kp CAPS       &kp LEFT       &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP        &kp DOWN       &kp SLASH    &at_carat     &mo 2
+&grave_hash  &one_lpar      &two_rpar  &three_rbrac  &four-plus  &five_lbrac  &tog 1                                                   &mo 3      &six_rbrk  &seven_lbrk  &eight_excl  &nine_equal  &zero_star  &perc_amp
+&kp TAB      &kp SEMI       &kp COMMA  &kp PERIOD    &kp P       &kp Y        &none                                                    &none      &kp F      &kp G        &kp C        &kp R        &kp L       &pipe_bslash
+&kp ESC      &kp A          &kp O      &kp E         &kp U       &kp I        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D      &kp H        &kp T        &kp N        &kp S       &kp MINUS
+&kp LSHFT    &kp APOS       &kp Q      &kp J         &kp K       &kp X                             &kp HOME      &kp PG_UP                        &kp B      &kp M        &kp W        &kp V        &kp Z       &kp RSHFT
+&mo 2        &dollar_tilde  &kp CAPS   &kp LEFT      &kp RIGHT                &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE             &kp UP       &kp DOWN     &kp SLASH    &caret_at   &mo 2
             >;
         };
 
