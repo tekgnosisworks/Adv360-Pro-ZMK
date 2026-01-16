@@ -56,9 +56,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        four-plus:
-
-        four-plus {
+        four-plus: four-plus {
             compatible = "zmk,behavior-mod-morph";
             label = "FOUR-PLUS";
             bindings = <&kp KP_N4>, <&kp PLUS>;
