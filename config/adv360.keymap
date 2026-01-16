@@ -56,15 +56,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        four-plus: four-plus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FOUR-PLUS";
-            bindings = <&kp KP_N4>, <&kp PLUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         lbrac_five: lbrac_five {
             compatible = "zmk,behavior-mod-morph";
             label = "LBRAC_FIVE";
