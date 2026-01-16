@@ -20,9 +20,9 @@
             bindings = <&kp>, <&kp>;
         };
 
-        dollar_tilde: dollar_tilde {
+        tilde_dollar: tilde_dollar {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOLLAR_TILDE";
+            label = "TILDE_DOLLAR";
             bindings = <&kp TILDE>, <&kp DLLR>;
 
             #binding-cells = <0>;
@@ -156,6 +156,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        four_plus: four_plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FOUR_PLUS";
+            bindings = <&kp KP_N4>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -164,11 +173,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&grave_hash  &one_lpar      &two_rpar  &three_rbrac  &four-plus  &five_lbrac  &tog 1                                                   &mo 3      &six_rbrk  &seven_lbrk  &eight_excl  &nine_equal  &zero_star  &perc_amp
-&kp TAB      &kp SEMI       &kp COMMA  &kp PERIOD    &kp P       &kp Y        &none                                                    &none      &kp F      &kp G        &kp C        &kp R        &kp L       &pipe_bslash
-&kp ESC      &kp A          &kp O      &kp E         &kp U       &kp I        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D      &kp H        &kp T        &kp N        &kp S       &kp MINUS
-&kp LSHFT    &kp APOS       &kp Q      &kp J         &kp K       &kp X                             &kp HOME      &kp PG_UP                        &kp B      &kp M        &kp W        &kp V        &kp Z       &kp RSHFT
-&mo 2        &dollar_tilde  &kp CAPS   &kp LEFT      &kp RIGHT                &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE             &kp UP       &kp DOWN     &kp SLASH    &caret_at   &mo 2
+&perc_amp  &seven_lbrk    &five_lbrac  &three_rbrac  &one_lpar  &nine_equal  &tog 1                                                   &mo 3      &zero_star  &two_rpar  &four_plus  &six_rbrk  &eight_excl  &grave_hash
+&kp TAB    &kp SEMI       &kp COMMA    &kp PERIOD    &kp P      &kp Y        &none                                                    &none      &kp F       &kp G      &kp C       &kp R      &kp L        &pipe_bslash
+&kp ESC    &kp A          &kp O        &kp E         &kp U      &kp I        &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D       &kp H      &kp T       &kp N      &kp S        &kp MINUS
+&kp LSHFT  &kp APOS       &kp Q        &kp J         &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B       &kp M      &kp W       &kp V      &kp Z        &kp RSHFT
+&mo 2      &tilde_dollar  &kp CAPS     &kp LEFT      &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP     &kp DOWN    &kp SLASH  &caret_at    &mo 2
             >;
         };
 
