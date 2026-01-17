@@ -95,7 +95,7 @@
         equal_nine: equal_nine {
             compatible = "zmk,behavior-mod-morph";
             label = "EQUAL_NINE";
-            bindings = <&kp KP_EQUAL>, <&kp KP_N9>;
+            bindings = <&kp EQUAL>, <&kp KP_N9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
