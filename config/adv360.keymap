@@ -162,11 +162,11 @@
         RProg_Dvorak {
             display-name = "Base";
             bindings = <
-&amp_perc  &lbrk_seven    &lbrac_five  &rbac_three  &lpar_one  &equal_nine  &tog 1                                                   &mo 3      &star_zero  &rpar_two  &plus_four  &rbrk_six  &excl_eight   &hash_grave
-&kp TAB    &kp SEMI       &kp COMMA    &kp PERIOD   &kp P      &kp Y        &tog 4                                                   &tog 6     &kp F       &kp G      &kp C       &kp R      &kp L         &kp SLASH
-&kp ESC    &kp A          &kp O        &kp E        &kp U      &kp I        &tog 5    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 7     &kp D       &kp H      &kp T       &kp N      &kp S         &kp MINUS
-&kp LSHFT  &kp APOS       &kp Q        &kp J        &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B       &kp M      &kp W       &kp V      &kp Z         &kp RSHFT
-&mo 2      &dollar_tilde  &kp CAPS     &kp LEFT     &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP     &kp DOWN    &caret_at  &fslash_pipe  &mo 2
+&amp_perc  &lbrk_seven    &lbrac_five  &rbac_three  &lpar_one  &equal_nine  &tog 1                                                   &mo 3      &star_zero  &rpar_two  &plus_four  &rbrk_six  &excl_eight  &hash_grave
+&kp TAB    &kp SEMI       &kp COMMA    &kp PERIOD   &kp P      &kp Y        &tog 4                                                   &tog 6     &kp F       &kp G      &kp C       &kp R      &kp L        &kp SLASH
+&kp ESC    &kp A          &kp O        &kp E        &kp U      &kp I        &tog 5    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 7     &kp D       &kp H      &kp T       &kp N      &kp S        &kp MINUS
+&kp LSHFT  &kp APOS       &kp Q        &kp J        &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B       &kp M      &kp W       &kp V      &kp Z        &kp RSHFT
+&mo 2      &dollar_tilde  &kp CAPS     &kp LEFT     &kp RIGHT               &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE              &kp UP     &kp DOWN    &caret_at  &kp BSLH     &mo 2
             >;
         };
 
